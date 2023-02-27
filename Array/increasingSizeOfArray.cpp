@@ -19,12 +19,15 @@ int main()
 //	memory deallocated for pointer p
 	free(p);
 	
-//	p is pointing on the queue	
+//	p is pointing on the q
 	p = q;
 	
 //	q pointer is made as Null
 	q = NULL;
 	
+//	The size of p is declared as 5 initially but it is made 10 by increasing at last with
+//	the help of q.
+
 	p[5] = 16; p[6] = 17; p[7] = 18; p[8] = 19; p[9] = 20; 
 	
 	for(i = 0; i < 10; i++)
